@@ -5,52 +5,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Сучасна пекарня</title>
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
+  <!-- #region HEADER -->
   <header>
     <nav>
       <a href="/"></a>
       <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
       <ul>
-        <li><a href="#traditions-section">Наші традиції</a></li>
-        <li><a href="#chefs-section">Шеф-кухарі</a></li>
-        <li><a href="#formats-section">Формати</a></li>
-        <li><a href="#contacts-section">Контакти</a></li>
+        <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+        <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+        <li><a class="link" href="#formats-section">Формати</a></li>
+        <li><a class="link" href="#contacts-section">Контакти</a></li>
       </ul>
     </nav>
-    <button>Замовити дзвінок</button>
+    <button class="button">Замовити дзвінок</button>
   </header>
+  <!-- #endregion HEADER -->
 
   <main>
-    <!-- HERO -->
+    <!-- #region HERO -->
     <section>
-      <h1>Сучасна пекарня</h1>
-      <ul>
-        <li>Великий попит на ринку</li>
-        <li>Доступні за бюджетом формати</li>
-        <li>Досвідчена управлінська команда</li>
+      <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
+      <ul class="hero-list">
+        <li class="hero-item">Великий попит на ринку</li>
+        <li class="hero-item">Доступні за бюджетом формати</li>
+        <li class="hero-item">Досвідчена управлінська команда</li>
       </ul>
     </section>
+    <!-- #endregion HERO -->
 
-    <!-- Новий формат традицій -->
+    <!-- #region Новий формат традицій -->
     <section id="traditions-section">
-      <h2>Новий формат традицій</h2>
-      <p>
-        <span>shop bakery</span> — це пекарня, яка взяла все найкраще, і
+      <h2 class="section-title">Новий формат традицій</h2>
+      <p class="tradition-paragraph">
+        <span class="accent">shop bakery</span> — це пекарня, яка взяла все найкраще, і
         зберегла смак традиційної випічки та натуральність інгредієнтів.
       </p>
       <p>
         Ми працюємо як найвідоміші мережі —
-        <span>5 хвилин і замовлення готове.</span> А ще у наших пекарень
+        <span class="accent">5 хвилин і замовлення готове.</span> А ще у наших пекарень
         стильний дизайн та висока якість обслуговування!
       </p>
       <img src="./images/baker-man.jpg" alt="Чоловік-пекар дивиться на батони із посмішкою" />
     </section>
+    <!-- #endregion Новий формат традицій -->
 
-    <!-- Наші найкращі шеф -кухарі -->
+    <!-- #region Наші найкращі шеф -кухарі -->
     <section id="chefs-section">
-      <h2>Наші найкращі шеф -кухарі</h2>
+      <h2 class="section-title">Наші найкращі <span class="accent-dark">шеф-кухарі</span></h2>
       <ul>
         <li>
           <article>
@@ -73,10 +78,11 @@
         </li>
       </ul>
     </section>
+    <!-- #endregion Наші найкращі шеф -кухарі -->
 
-    <!-- Формати -->
+    <!-- #region Формати -->
     <section id="formats-section">
-      <h2>Формати</h2>
+      <h2 class="section-title">Формати</h2>
       <ul>
         <li>
           <article>
@@ -95,17 +101,20 @@
         </li>
       </ul>
     </section>
+    <!-- #endregion Формати -->
 
-    <!-- Приєднуйся до мережі пекарень -->
+    <!-- #region Приєднуйся до мережі пекарень -->
     <section id="contacts-section">
-      <h2>Приєднуйся до мережі пекарень</h2>
+      <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1763624576103!5m2!1sru!2sua"
         width="603" height="595" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
+    <!-- #endregion Приєднуйся до мережі пекарень -->
   </main>
 
+  <!-- #region FOOTER -->
   <footer id="Контакти">
     <nav>
       <a href="#"></a>
@@ -134,6 +143,7 @@
       <p>&copy; 2022 Дані захищені</p>
     </address>
   </footer>
+  <!-- #endregion FOOTER -->
 </body>
 
 </html>

@@ -1,0 +1,104 @@
+:root {
+  --bakery-landing-1-background: #faf4ea;
+  --bakery-landing-1-s1: #31261a;
+  --bakery-landing-1-c2: #819b57;
+  --bakery-landing-1-s3: #465929;
+}
+
+/* #region Загальні правила */
+
+body {
+  color: var(--bakery-landing-1-s1);
+  background-color: #faf4ea;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* #endregion Загальні правила */
+
+/* #region HEADER */
+.link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: var(--bakery-landing-1-background)
+}
+
+.link:hover,
+.link:focus {
+  color: var(--bakery-landing-1-c2);
+}
+
+
+.button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--bakery-landing-1-background);
+  border: 2px solid var(--bakery-landing-1-c2);
+  border-radius: 8px;
+  padding: 16px 32px;
+  background-color: var(--bakery-landing-1-c2);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: transparent;
+  color: var(--bakery-landing-1-s3);
+}
+
+/* #endregion HEADER */
+
+/* #region HERO */
+
+.hero-title {
+  /* font-weight: 900;
+  font-size: 128px;
+  text-align: center; */
+  color: var(--bakery-landing-1-background);
+}
+
+.accent {
+  color: var(--bakery-landing-1-c2);
+}
+
+.hero-list {
+  background-color: var(--bakery-landing-1-c2);
+}
+
+.hero-item {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--bakery-landing-1-background);
+}
+
+/* #endregion HERO */
+
+/* #region Новий формат традицій */
+.section-title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.31;
+}
+
+.accent {
+  color: var(--bakery-landing-1-c2);
+}
+
+/* #endregion Новий формат традицій */
+
+/* #region Наші найкращі шеф -кухарі */
+
+.accent-dark {
+  color: var(--bakery-landing-1-s3);
+}
+
+/* #endregion Наші найкращі шеф -кухарі */
