@@ -1,0 +1,65 @@
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 24px;
+  margin-right: 152px;
+  cursor: pointer;
+}
+
+.header-menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  gap: 64px;
+  margin-right: 152px;
+}
+
+.link {
+  font-size: 18px;
+  text-align: center;
+  color: var(--bakery-landing-1-background);
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: var(--bakery-landing-1-c2);
+}
+
+
+.button {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--bakery-landing-1-background);
+  border: 2px solid var(--bakery-landing-1-c2);
+  border-radius: 8px;
+  padding: 16px 32px;
+  background-color: var(--bakery-landing-1-c2);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(--bakery-landing-1-s3);
+}

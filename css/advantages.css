@@ -1,0 +1,17 @@
+.advantages-section {
+  background-color: var(--bakery-landing-1-c2);
+  padding: 16px 0;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 20px;
+}
+
+.advantages-item {
+  font-weight: 300;
+  font-size: 20px;
+  color: var(--bakery-landing-1-background);
+}

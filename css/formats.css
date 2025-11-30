@@ -1,0 +1,76 @@
+.formats-container {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.formats-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+  fill: var(--bakery-landing-1-s1);
+  border: 1px solid var(--bakery-landing-1-s1);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-carousel:hover {
+  background-color: var(--bakery-landing-1-s1);
+  fill: var(--bakery-landing-1-background);
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 444px;
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--bakery-landing-1-s1) 100%);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.3s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
+}
+
+.format-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.format-title {
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--bakery-landing-1-background);
+}
+
+.format-text {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--bakery-landing-1-background);
+}
+
+.format-text p:last-child {
+  margin-bottom: 0;
+}

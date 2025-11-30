@@ -1,0 +1,50 @@
+.traditions-section {
+  padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  max-width: 710px;
+}
+
+.section-title {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 1.3;
+  margin-bottom: 80px;
+}
+
+.traditions-title {
+  margin-bottom: 42px;
+}
+
+.tradition-paragraph {
+  margin-bottom: 42px;
+  max-width: 680px;
+}
+
+.tradition-paragraph:last-child {
+  margin-bottom: 52px;
+  max-width: 360px;
+}
+
+.tradition-paragraph .uppercase {
+  text-transform: uppercase;
+}
+
+.tradition-paragraph .accent {
+  font-weight: 600;
+}
+
+.tradition-paragraph.limited {
+  max-width: 340px;
+}
+
+.tradition-photo {
+  border-radius: 400px 400px 0 0;
+}

@@ -1,0 +1,68 @@
+.shefs-title {
+  position: relative;
+  text-align: center;
+  margin: 0 auto 80px;
+}
+
+.shefs-title::before,
+.shefs-title::after {
+  position: absolute;
+  bottom: 23px;
+  width: 320px;
+  border: 2px solid var(--bakery-landing-1-c5);
+  content: "";
+}
+
+.shefs-title::before {
+  left: 0;
+}
+
+.shefs-title::after {
+  right: 0;
+}
+
+.accent-dark {
+  color: var(--bakery-landing-1-s3);
+}
+
+.chef-list {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 40px;
+  margin-left: 16px;
+
+}
+
+.chef-item {
+  max-width: 605px;
+  flex-basis: calc((100% - 30px) / 2);
+
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--bakery-landing-1-background), -16px 16px 0 1px var(--bakery-landing-1-s4);
+}
+
+.chef-info {
+  max-width: 335px;
+}
+
+.chef-card-title {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
+}

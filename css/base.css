@@ -1,0 +1,32 @@
+:root {
+  --bakery-landing-1-background: #faf4ea;
+  --bakery-landing-1-s1: #31261a;
+  --bakery-landing-1-c2: #819b57;
+  --bakery-landing-1-s3: #465929;
+  --bakery-landing-1-s4: #a18268;
+  --bakery-landing-1-c5: #cfcfbc;
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: var(--bakery-landing-1-s1);
+  font-family: var(--font-family);
+  background-color: var(--bakery-landing-1-background);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
