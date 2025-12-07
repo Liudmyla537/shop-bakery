@@ -1,89 +1,214 @@
-.footer {
-  position: relative;
-  background-color: var(--bakery-landing-1-s1);
-  background-image: url("../images/footer-background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 32px 0;
-}
+ .footer {
+   position: relative;
+   background-color: var(--bakery-landing-1-s1);
+   background-image: url("../images/footer-background.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   padding: 32px 0;
+ }
 
-.footer::before,
-.footer::after {
-  position: absolute;
-  background-repeat: no-repeat;
-  bottom: 0;
-  content: "";
-}
+ .footer::before,
+ .footer::after {
+   position: absolute;
+   background-repeat: no-repeat;
+   bottom: 0;
+   content: "";
+ }
 
-.footer::before {
-  width: 180px;
-  height: 120px;
-  background-image: url(../images/decor-bread-small.png);
-}
+ .footer::before {
+   top: 48px;
+   width: 92px;
+   height: 196px;
+   background-image: url(../images/footer-bread-top.png);
+ }
 
-.footer::after {
-  width: 380px;
-  height: 190px;
-  right: 0;
-  background-image: url(../images/decor-bread-large.png);
-}
+ .footer::after {
+   width: 100px;
+   height: 90px;
+   right: 0;
+   bottom: 0;
+   background-image: url(../images/footer-bread-bottom.png);
+ }
 
-.footer-container {
-  display: flex;
-  gap: 5 6px;
-}
+ .footer-container {
+   display: flex;
+   flex-direction: column;
+ }
 
-.footer-nav,
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 56px;
-}
+ .footer-nav,
+ .footer-address {
+   display: flex;
+   flex-direction: column;
+ }
 
-.footer-logo,
-.footer-menu,
-.footer-address-list,
-.address-info {
-  flex-grow: 1;
-}
+ .logo-footer {
+   margin-bottom: 32px;
+ }
 
-.footer-menu-item {
-  margin-bottom: 16px;
-}
+ .footer-logo,
+ .footer-menu,
+ .footer-address {
+   text-align: center;
+ }
 
-.logo-footer {
-  margin-right: 0px;
-}
+ .footer-menu-item {
+   margin-bottom: 18px;
+ }
 
-.address-link {
-  font-weight: 300;
-  font-size: 16px;
-  font-style: normal;
-  margin-bottom: 16px;
-  color: var(--bakery-landing-1-background);
-  transition: color 0.3s;
-}
+ .footer-menu-link {
+   font-weight: 300;
+   font-size: 14px;
+   color: var(--bakery-landing-1-background);
+ }
 
-.address-link:hover {
-  color: var(--bakery-landing-1-c2);
-}
+ .address-link {
+   font-weight: 300;
+   font-size: 14px;
+   font-style: normal;
+   color: var(--bakery-landing-1-background);
+   margin-bottom: 18px;
+ }
 
-.footer-address-icon {
-  display: flex;
-  gap: 22px;
-}
+ .footer-address-contact {
+   display: block;
+ }
 
-.address-icon {
-  fill: var(--bakery-landing-1-background);
-  transition: fill 0.3s;
-}
+ .footer-address-icon {
+   display: flex;
+   justify-content: center;
+   gap: 22px;
+   margin-bottom: 8px;
+ }
 
-.address-icon:hover {
-  fill: var(--bakery-landing-1-c2);
-}
+ .address-icon {
+   fill: var(--bakery-landing-1-background);
+ }
 
-.address-copyright {
-  font-size: 14px;
-  color: var(--bakery-landing-1-s4);
-}
+ .link-copyright {
+   margin-bottom: 8px;
+ }
+
+ .address-copyright {
+   font-weight: 400;
+   font-size: 12px;
+   font-style: normal;
+   color: var(--bakery-landing-1-s4);
+   margin-bottom: 0;
+ }
+
+ @media screen and (min-width: 768px) {
+   .footer-container {
+     flex-direction: row;
+     gap: 30px;
+   }
+
+   .footer-nav,
+   .footer-address {
+     flex-direction: row;
+     gap: 56px;
+   }
+
+   .logo-footer {
+     margin-bottom: 0;
+   }
+
+   .footer-nav {
+     flex-basis: 40%;
+   }
+
+   .footer-menu-item,
+   .address-link {
+     margin-bottom: 16px;
+   }
+
+   .footer-address {
+     flex-basis: 60%;
+   }
+
+   .footer-menu,
+   .footer-address {
+     text-align: left;
+   }
+
+   .footer-menu-item:last-child {
+     margin-bottom: 0;
+   }
+
+   .footer-address-icon {
+     justify-content: flex-start;
+     margin-bottom: 0;
+   }
+ }
+
+ @media screen and (min-width: 1280px) {
+   .footer::before {
+     width: 180px;
+     height: 120px;
+     top: revert-layer;
+     left: 0;
+     background-image: url(../images/decor-bread-small.png);
+   }
+
+   .footer::after {
+     width: 380px;
+     height: 190px;
+     right: 0;
+     background-image: url(../images/decor-bread-large.png);
+   }
+
+   .footer-container {
+     gap: 56px;
+   }
+
+   .footer-logo {
+     text-align: left;
+   }
+
+   .footer-nav,
+   .footer-address {
+     flex-basis: 50%;
+   }
+
+   .footer-logo,
+   .footer-menu,
+   .footer-address-list,
+   .address-info {
+     flex-grow: 1;
+   }
+
+   .footer-menu-link {
+     font-weight: 400;
+     font-size: 18px;
+   }
+
+   .address-link,
+   .footer-menu-link {
+     font-size: 16px;
+     transition: color 0.3s;
+   }
+
+   .address-link:hover,
+   .footer-menu-link:hover {
+     color: var(--bakery-landing-1-c2);
+   }
+
+   .footer-address-icon {
+     display: flex;
+     justify-content: flex-start;
+     gap: 22px;
+   }
+
+   .address-icon {
+     fill: var(--bakery-landing-1-background);
+     transition: fill 0.3s;
+   }
+
+   .address-icon:hover {
+     fill: var(--bakery-landing-1-c2);
+   }
+
+   .address-copyright {
+     font-size: 14px;
+   }
+ }

@@ -3,63 +3,124 @@
   top: 0px;
   left: 0;
   width: 100%;
-  padding-top: 32px;
-
+  padding-top: 16px;
+  z-index: 100;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-}
-
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .logo {
   font-weight: 400;
-  font-size: 24px;
-  margin-right: 152px;
+  font-size: 16px;
   cursor: pointer;
+  width: 72px;
+  height: 38px;
 }
 
 .header-menu {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  gap: 64px;
-  margin-right: 152px;
+  display: none;
 }
 
-.link {
-  font-size: 18px;
-  text-align: center;
-  color: var(--bakery-landing-1-background);
-  transition: color 0.3s;
+.header-button {
+  display: none;
+  position: relative;
+  z-index: 10;
 }
 
-.link:hover {
-  color: var(--bakery-landing-1-c2);
-}
-
-
-.button {
+.button-burger {
   display: block;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: var(--bakery-landing-1-background);
-  border: 2px solid var(--bakery-landing-1-c2);
-  border-radius: 8px;
-  padding: 16px 32px;
-  background-color: var(--bakery-landing-1-c2);
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  background-color: transparent;
+  border: none;
+  fill: var(--bakery-landing-1-background);
+  padding: 0;
+  width: 24px;
+  height: 24px;
 }
 
-.button:hover {
-  background-color: transparent;
-  color: var(--bakery-landing-1-s3);
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .logo {
+    width: 90px;
+    font-size: 24px;
+  }
+
+  .header-menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .header-link {
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: var(--bakery-landing-1-background);
+    transition: color 0.3s;
+  }
+
+  .header-link:hover {
+    color: var(--bakery-landing-1-c2);
+  }
+
+  .button-burger {
+    display: none;
+  }
+
+  .header-button {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--bakery-landing-1-background);
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: none;
+    background-color: var(--bakery-landing-1-c2);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    z-index: 101;
+    pointer-events: auto;
+  }
+
+  .header-button:hover {
+    background-color: transparent;
+    color: var(--bakery-landing-1-background);
+    border: 2px solid var(--bakery-landing-1-c2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 32px;
+  }
+
+  .header-menu {
+    gap: 64px;
+  }
+
+  .logo {
+    width: 114px;
+    height: 56px;
+  }
+
+  .header-link {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .header-button {
+    font-weight: 600;
+    font-size: 18px;
+    padding: 16px 32px;
+  }
 }

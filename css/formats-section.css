@@ -1,0 +1,115 @@
+.btn-carousel {
+  display: none;
+}
+
+.section-title {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.formats-section-slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.formats-section {
+  overflow: hidden;
+  width: 100%;
+}
+
+.format-card-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 444px;
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--bakery-landing-1-s1) 100%);
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.format-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 421px;
+  height: 100%;
+  width: 100%;
+}
+
+.format-title {
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--bakery-landing-1-background);
+  margin-bottom: 8px;
+}
+
+.format-text {
+  font-weight: 300;
+  font-size: 14px;
+  color: var(--bakery-landing-1-background);
+}
+
+.format-text p {
+  margin-bottom: 0;
+}
+
+.format-text p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .format-image {
+    width: 349px;
+    height: 444px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .btn-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 0;
+    fill: var(--bakery-landing-1-s1);
+    border: 1px solid var(--bakery-landing-1-s1);
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .btn-carousel:hover {
+    background-color: var(--bakery-landing-1-s1);
+    fill: var(--bakery-landing-1-background);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-title {
+    font-size: 64px;
+    margin-bottom: 80px;
+  }
+
+  .format-card {
+    transition: transform 0.3s;
+  }
+
+  .format-card:hover {
+    transform: scale(1.05);
+  }
+
+  .format-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}

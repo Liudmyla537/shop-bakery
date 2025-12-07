@@ -4,14 +4,17 @@
 @import url('./reset.css');
 
 
+
 /* Section */
 @import url('./header.css');
-@import url('./hero.css');
-@import url('./advantages.css');
-@import url('./traditions.css');
-@import url('./shefs.css');
-@import url('./formats.css');
-@import url('./contacts.css');
+@import url('./mobile-menu.css');
+@import url('./pagination.css');
+@import url('./hero-section.css');
+@import url('./advantages-section.css');
+@import url('./traditions-section.css');
+@import url('./chefs-section.css');
+@import url('./formats-section.css');
+@import url('./contacts-section.css');
 @import url('./footer.css');
 @import url('./backdrop.css');
 @import url('./modal.css');

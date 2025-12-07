@@ -10,10 +10,24 @@
   overflow-y: auto;
 }
 
+.modal::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  background-image: url(../images/modal-bread.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 180px;
+  height: 240px;
+  pointer-events: none;
+}
+
 .modal-btn-close {
   position: absolute;
   top: 40px;
   right: 40px;
+  border: none;
+  cursor: pointer;
 }
 
 .section-modal-title {
@@ -30,4 +44,8 @@
   text-align: center;
   color: var(--bakery-landing-1-s3);
   margin-bottom: 72px;
+}
+
+.form-fild {
+  margin-bottom: 32px;
 }
