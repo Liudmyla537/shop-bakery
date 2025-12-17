@@ -23,7 +23,7 @@
 Проєкт задеплоєний на **GitHub Pages**.
 
 👉 **Live demo:**  
-[liudmyla537.github.io/shop-bakery/] (liudmyla537.github.io/shop-bakery/)
+[liudmyla537.github.io/shop-bakery/](liudmyla537.github.io/shop-bakery/)
 
 ---
 
