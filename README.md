@@ -20,12 +20,10 @@
 - Інтеграція Google Maps
 - Плавна прокрутка - навігація по сайту
 
-## 🚀 Деплой
-
 Проєкт задеплоєний на **GitHub Pages**.
 
 👉 **Live demo:**  
-[liudmyla537.github.io/shop-bakery/](liudmyla537.github.io/shop-bakery/)
+[liudmyla537.github.io/shop-bakery/] (liudmyla537.github.io/shop-bakery/)
 
 ---
 
