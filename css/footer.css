@@ -170,6 +170,10 @@
      flex-basis: 50%;
    }
 
+   .footer-address {
+     gap: 106px;
+   }
+
    .footer-logo,
    .footer-menu,
    .footer-address-list,
@@ -211,4 +215,11 @@
    .address-copyright {
      font-size: 14px;
    }
+
+   @media screen and (min-width: 1440px) {
+     .footer-address {
+       gap: 176px;
+     }
+   }
+
  }
